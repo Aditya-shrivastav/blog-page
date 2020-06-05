@@ -1,0 +1,109 @@
+/* setting the grid area for the page */
+#container{
+    display:grid;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd"
+    "mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft";
+}
+/* making the author image round */
+#main img{
+    border-radius: 50%;
+}
+/*setting the bottom border and border color for the sub heading*/
+#main h2{
+    border-bottom: 2px solid rgb(140,140,140);
+}
+/* assigning the grid area for the head and setting the widht and height of it */
+#head{
+    grid-area: hd;
+    width: 100%;
+    height:90px;
+}
+/* assigning the grid area , font style, width and height of the side bar */
+#side{
+    font-style:italic;
+    grid-area: sb;
+    width:100%;
+    height:1150px;
+}
+/* aligning the items inside the sidebar in center using flexbox */
+#align{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* setting the grid area, width and height for the main body of the page */
+#main{
+    grid-area: mn;
+    width:100%;
+    height:1150px;
+}
+/* setting the items of the foot into the center using flexbox */
+#foot{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ft;
+    width:100%;
+    height:50px;
+    border-top: 2px solid rgb(140,140,140);
+}
+h1{
+    text-align: center;
+    font-size:30pt;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom:1px solid black;
+    font-style: italic;
+}
+/* setting block quote style */
+blockquote { 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  /*adding style to image caption */
+  figcaption {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color: blue;
+    font-style: italic;
+    padding-top: 2px;
+  }
+/* applying media query to different breakpoints such that the website will work fine with different viewport */
+@media(max-width:1500px) and (min-width:801px){
+    #side{
+        grid-area: sb;
+        width:100%;
+        height:650px;
+    }
+    #main{
+        grid-area: mn;
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-width:800px){
+    #container{
+        display:grid;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd"
+        "sb sb sb sb sb sb sb"
+        "mn mn mn mn mn mn mn"
+        "ft ft ft ft ft ft ft";
+    }
+    #side{
+        grid-area: sb;
+        width:100%;
+        height:auto;
+    }
+    #main{
+        grid-area: mn;
+        width:100%;
+        height:auto;
+    }
+}

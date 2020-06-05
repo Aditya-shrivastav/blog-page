@@ -1,0 +1,24 @@
+/* setting the name, age and gender in the center of the form */
+#container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    width:300px;
+    font-size: 15pt;
+    padding:10px;
+}
+/* setting the form in the center */
+body{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+/*setting the size of the text inside the p element */
+p{
+ font-size: 25pt;
+}
+/*setting the size of the text inside the span element */
+span{
+    font-size:15pt;
+}
