@@ -3,7 +3,7 @@
     grid-area: hd;
     width:100%;
     height:300px;
-    background-image: url("C:/Users/ADITYA/Desktop/Udacity_project/images/anime3.png");
+    background-image: url("../images/anime3.png");
     background-size: cover;
   
 }
