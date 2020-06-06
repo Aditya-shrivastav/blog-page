@@ -1,21 +1,21 @@
 /* setting the image to the animes and assigning the grid area */
 #naruto{
     grid-area: first;
-    background-image:url("C:/Users/ADITYA/Desktop/Udacity_project/images/naruto1.png");
+    background-image:url("../images/naruto1.png");
     background-repeat: no-repeat;
 }
 #hunterXhunter{
     grid-area: second;
-    background-image: url("C:/Users/ADITYA/Desktop/Udacity_project/images/hunter1.jpg");
+    background-image: url("../images/hunter1.jpg");
     background-repeat: no-repeat;
 }
 #deathNote{
     grid-area: third;
-    background-image: url("C:/Users/ADITYA/Desktop/Udacity_project/images/deathnote2.jpg");
+    background-image: url("../images/deathnote2.jpg");
     background-repeat: no-repeat;
 }
 #bakugan{
     grid-area: four;
-    background-image: url("C:/Users/ADITYA/Desktop/Udacity_project/images/bakugan1.jpg");
+    background-image: url("../images/bakugan1.jpg");
     background-repeat: no-repeat;
 }
